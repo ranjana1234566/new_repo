@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in {1..255}
+do
+    echo $i 
+    ping -c "127.0.0.$i" & >/dev/null && echo "127.0.0.$i is up"
+done
